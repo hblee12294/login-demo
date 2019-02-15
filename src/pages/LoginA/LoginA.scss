@@ -1,14 +1,15 @@
 @import '../../variables.scss';
 
-$class-prefix: 'a';
+$page-prefix: 'a';
 
-.#{$class-prefix} {
+.#{$page-prefix} {
   &-container {
     @extend %login-container;
     display: flex;
   }
 
   &-left {
+    position: relative;
     flex: 1;
     background-image: url('./assets/geran-de-klerk.jpg');
     background-size: cover;

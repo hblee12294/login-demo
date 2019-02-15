@@ -6,7 +6,8 @@
     "object-curly-spacing": [true, "always"],
     "jsx-curly-spacing": [true, "always"],
     "no-console": false,
-    "interface-name": false
+    "interface-name": false,
+    "object-literal-sort-keys": false
   },
   "rulesDirectory": [
     "node_modules/tslint-eslint-rules/dist/rules"
