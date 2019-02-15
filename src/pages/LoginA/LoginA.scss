@@ -1,0 +1,33 @@
+@import '../../variables.scss';
+
+$class-prefix: 'a';
+
+.#{$class-prefix} {
+  &-container {
+    @extend %login-container;
+    display: flex;
+  }
+
+  &-left {
+    flex: 1;
+    background-image: url('./assets/geran-de-klerk.jpg');
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  &-right {
+    width: 40vw;
+
+    @include media('<=s') {
+      width: 100vw;
+    }
+
+    @include media('<=m', '>s') {
+      width: 70vw;
+    }
+
+    @include media('<=l', '>m') {
+      width: 50vw;
+    }
+  }
+}

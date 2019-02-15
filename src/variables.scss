@@ -1,0 +1,29 @@
+// vendors
+@import '~include-media/dist/_include-media.scss';
+
+// theme color
+$color-primary: #247417;
+$color-background: #f5f5f5;
+
+// font-family
+$font-family-text: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// font-size
+$font-size-small: 14px;
+$font-size-regular: 16px;
+$font-size-large: 24px;
+$font-size-x-large: 32px;
+
+// break points: overide default breakpoints of 'include-media'
+$breakpoints: (
+  's': 420px,
+  'm': 768px,
+  'l': 1024px,
+);
+
+// placeholders
+%login-container {
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+}
